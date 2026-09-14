@@ -2,59 +2,138 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- CHANGE THIS. It is the name on the browser tab, and it is what Google shows. -->
-  <title>Your Name — what you build Test</title>
-
-  <!-- CHANGE THIS TOO. One sentence. It is what shows under your link when someone shares it. -->
-  <meta name="description" content="One sentence about who you are and what you make.">
-
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Charlotte Thomas is a creative developer building modern, human-centered digital experiences." />
+  <title>Charlotte Thomas | Creative Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <div class="page-shell">
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <div class="orb orb-three"></div>
 
-  <header>
-    <!-- Exactly ONE h1 on the page. It is your name. -->
-    <h1>Your Name - Try Here FIRST</h1>
-    <p class="tagline">One line: what you do, and who it is for.</p>
-  </header>
+    <header class="topbar">
+      <div class="brand" aria-label="Charlotte Thomas brand">
+        <span class="brand-mark">CT</span>
+        <span>Charlotte Thomas</span>
+      </div>
 
-  <main>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#learning">Learning</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    <section>
-      <h2>What I am working on</h2>
-      <ul>
-        <li><strong>Something real.</strong> What it is, in one line.</li>
-        <li><strong>Something else.</strong> Keep it concrete — a thing you made, not a skill you have.</li>
-      </ul>
-    </section>
+      <div class="status-pill">
+        <span class="dot"></span>
+        Available for projects
+      </div>
+    </header>
 
-    <section>
-      <h2>What I am learning</h2>
-      <p>
-        Two or three sentences. Name the actual tools. "I am learning networking and how data
-        centers stay online" beats "I am passionate about technology."
-      </p>
-    </section>
+    <main class="bento-grid" aria-label="Personal portfolio overview">
+      <section class="card hero card-wide" id="about">
+        <p class="eyebrow">Creative technologist • designer • developer</p>
+        <h1>Building thoughtful digital experiences that feel as good as they work.</h1>
+        <p class="intro">
+          I’m Charlotte, a student and builder focused on blending design, code, and creativity to make tools,
+          interfaces, and ideas feel intuitive, expressive, and human.
+        </p>
 
-    <section>
-      <h2>Get in touch</h2>
-      <!--
-        Put an email you will still control after graduation. If you only have the school one
-        today, that is fine — put it in, and change it later. That is what commits are for.
-      -->
-      <p><a href="mailto:you@example.com">you@example.com</a></p>
-    </section>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#work">View my work</a>
+          <a class="secondary-btn" href="mailto:charlotte@example.com">Say hello</a>
+        </div>
 
-  </main>
+        <div class="hero-metrics">
+          <div>
+            <strong>3+</strong>
+            <span>Creative projects</span>
+          </div>
+          <div>
+            <strong>2</strong>
+            <span>Current passions</span>
+          </div>
+          <div>
+            <strong>1</strong>
+            <span>Mindset</span>
+          </div>
+        </div>
+      </section>
 
-  <footer>
-    <p>Built by hand. Last updated <!-- change this when you change the page --> August 2026.</p>
-  </footer>
+      <aside class="card profile-card">
+        <div class="avatar">CT</div>
+        <div class="profile-copy">
+          <p class="label">Currently</p>
+          <h2>Learning + building</h2>
+          <p>Exploring front-end design systems, interaction design, and accessible user experiences.</p>
+        </div>
+      </aside>
 
+      <section class="card stat-card">
+        <p class="label">Focus</p>
+        <h2>What I’m learning</h2>
+        <ul>
+          <li>JavaScript + responsive UI patterns</li>
+          <li>CSS animations and motion design</li>
+          <li>Design thinking and user-centered iteration</li>
+        </ul>
+      </section>
+
+      <section class="card card-medium" id="work">
+        <p class="label">Selected work</p>
+        <h2>Projects with purpose</h2>
+        <div class="project-list">
+          <div>
+            <span class="project-tag">UI</span>
+            <p>Portfolio refresh featuring bold typography and light motion.</p>
+          </div>
+          <div>
+            <span class="project-tag">Code</span>
+            <p>Interactive mini web experiences built with HTML, CSS, and JavaScript.</p>
+          </div>
+          <div>
+            <span class="project-tag">Concept</span>
+            <p>Creative ideas turned into functional prototypes and story-driven pages.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card card-medium" id="learning">
+        <p class="label">Stack</p>
+        <h2>Tools I use</h2>
+        <div class="chip-grid">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Figma</span>
+          <span>VS Code</span>
+          <span>Git</span>
+        </div>
+      </section>
+
+      <section class="card card-wide contact-card" id="contact">
+        <div>
+          <p class="label">Let’s build</p>
+          <h2>Open to collaborations, projects, and creative conversations.</h2>
+        </div>
+        <div class="contact-row">
+          <a href="mailto:charlotte@example.com">charlotte@example.com</a>
+          <span>Based in the UK</span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
